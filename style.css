@@ -1,0 +1,102 @@
+/* Clear all the default settings */
+html,body,p,h1,h2,h3,h4,h5,h6,input,
+form,table{
+    padding: 0;
+    margin: 0;
+}
+
+input,textarea,select{
+    border: 1px solid #666;
+    outline:none;
+}
+ul,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+img{
+ vertical-align: top;
+}
+b,strong,h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+em,i{
+    font-style: normal;
+}
+a,u,s,del{
+    text-decoration: none;
+}
+body{
+    line-height: 1;
+    min-width: 768px;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Set background color */
+html,body{
+    background-color:  #DEE8E8;
+}
+
+/* Header */
+header{
+    width: 100%;
+    height: 350px;
+}
+header section{
+    float: left;
+}
+#navi {
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+
+}
+#navi div{
+    float: left;
+}
+#navi li{
+    float: left;
+    margin: 0 10px;
+}
+#hyperlink{
+    font-family:Trebuchet MS;
+    font-weight: 800;
+    font-size: 30px;
+    margin: 0 5% 0 13%;
+}
+nav li a{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color:black;
+    text-transform: uppercase;
+    margin: 0 50px;
+    height: 100%;
+    display: inline-block;
+}
+#navi li:hover{
+    color: #423965;
+    text-shadow: 0 0 5px #8dbab5;
+}
+#navi #contact{
+    margin-left: 6%;
+
+}
+#navi button{
+    font-family:Trebuchet MS;
+    height: 40px;
+    background: var(--Base-100, #272727);
+    display: inline-flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: none;
+    font-size: 16px; 
+    border: none;
+}
