@@ -56,6 +56,9 @@ header section{
     line-height: 65px;
     display: flex; 
     justify-content: space-between; 
+    position: fixed;
+    z-index: 100;
+    background: #DEE8E8;
 }
 #navi nav{
     display: flex;
@@ -111,11 +114,11 @@ nav li a{
     align-items: center;
 }
 #title h1{
-    font-size: 50px;
+    font-size: 55px;
     font-family: Georgia , serif;
     color: black;
     font-weight: bolder;
-    margin-top: 15vh;
+    margin-top: 20vh;
 }
 #title h1 span{
     text-shadow: 0 0 15px #DDF472;
@@ -220,7 +223,6 @@ main{
     justify-content: center;
     align-items: center;
 }
-
 .swiper-wrapper {
     width: 80%;
     height: 60vh;
@@ -233,6 +235,14 @@ main{
     height: 100%;
     display: flex;
     align-items: center;
+    position: relative;
+}
+.swiper svg{
+    color: #272727;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    z-index: 1;
 }
 .img-container{
     display: inline-block; 
@@ -257,4 +267,131 @@ main{
     line-height: 145%;
     word-spacing: 5px;
     margin-left: 5vw;
+}
+#section4{
+    width: 100%;
+    height: 80vh;
+    background: white;
+    
+}
+#section4 h2{
+    color: #272727;
+    background: #DDF472;
+    height: 13vh;
+    line-height: 13vh;
+}
+#section4>div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 85%;
+    margin: 10vh auto;
+}
+#section4>div>div img{
+    width: 95px;
+    object-fit: cover;
+    background: white;
+    padding: 20px;
+    border-radius: 40%;
+}
+/* Card flip */
+.card-flip {
+    perspective: 1000px;
+    position: relative;
+}
+.card {
+    width: 23%;
+    height: 46vh;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    background: #DEE8E8;
+    border: none;
+    border-radius: 30px;
+}
+#svg6{
+    position: absolute;
+    top: -10vh;
+    left: 1vw;
+    z-index: -1;
+}
+.card-front, .card-back {
+    position: absolute;
+    backface-visibility: hidden; 
+}
+.card.flipped {
+    transform: rotateY(180deg);
+}  
+.card-front {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    padding-top: 10vh;
+}
+.card-front>h3{
+    font-size: 30px;
+    font-family: 'Trebuchet MS';
+    color:#272727;
+    font-style: normal;
+    font-weight: 800;
+    word-spacing: 5px;
+    text-shadow: #DDF472 0 0 5px;
+    margin-top: 10vh;
+}
+.card-back {
+    height: 100%;
+    transform: rotateY(180deg); 
+    border-radius: 30px;
+}
+.card-back>p{
+    height: 100%;
+    font-size: 20px;
+    font-family: 'Trebuchet MS';
+    color: #272727;
+    font-style: normal;
+    font-weight: 400;
+    word-spacing: 5px;
+    background: rgba(221, 244, 114, 0.3);
+    border-radius: 30px;
+    padding: 2.5vh 1.5vw;
+    line-height: 130%;
+}
+#svg7{
+    position: absolute;
+    top: 50vh;
+    right: 1vw;
+    z-index: 1;
+}
+#section5{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #272727;
+    color: white;
+    padding:0 14vw;
+    font-size:20px;
+    font-family: 'Trebuchet MS';
+    line-height: 160%;
+}
+/* Footer */
+footer{
+    width: 100%;
+    height: 100px;
+    background: #DEE8E8;
+    color: #272727;
+    text-align: center;
+    margin-top: 4vh;
+
+}
+footer>div>a{
+    color: #272727;
+}
+footer div:nth-child(2){
+    margin-top: 3vh;
+}
+footer div:nth-child(2)>a{
+    margin: 0 10px;
 }
