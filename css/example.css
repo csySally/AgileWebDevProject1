@@ -1,0 +1,132 @@
+/* Set background color */
+html,body{
+    background-color:  #DEE8E8;
+}
+
+/* Header */
+header{
+    width: 100%;
+    height: 350px;
+}
+header section{
+    float: left;
+}
+#navi {
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    display: flex; 
+    justify-content: space-between; 
+    position: fixed;
+    z-index: 100;
+    background: #DEE8E8;
+}
+#navi nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#navi li{
+    margin: 0 10px;
+    width: 150px;
+}
+#hyperlink{
+    font-family:Trebuchet MS;
+    font-weight: 800;
+    font-size: 30px;
+    margin-left: 10%;
+}
+nav li a{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color:black;
+    text-transform: uppercase;
+    height: 100%;
+    display: inline-block;
+}
+#navi li:hover{
+    color: #423965;
+    text-shadow: 0 0 5px #8dbab5;
+}
+#navi #contact{
+    margin-right: 10%;
+
+}
+#navi button{
+    font-family:Trebuchet MS;
+    height: 40px;
+    background: #272727;
+    display: inline-flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: none;
+    font-size: 16px; 
+    border: none;
+}
+#title{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#title h1{
+    font-size: 55px;
+    font-family: Georgia , serif;
+    color: black;
+    font-weight: bolder;
+    margin-top: 20vh;
+}
+#title h1 span{
+    text-shadow: 0 0 15px #DDF472;
+}
+#title p{
+    width: 60%;
+    font-size: 20px;
+    font-family: 'Trebuchet MS';
+    color: #6B6B6B;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    margin-top: 10vh;
+}
+
+#svg2{
+    position: absolute;
+    top: 26vh;
+    left: 8vw;
+    z-index: 1;
+}
+
+#svg4{
+    position: absolute;
+    top: 18vh;
+    right: 9vw;
+    z-index: 1;
+}
+
+
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 100px;
+    background: #DEE8E8;
+    color: #272727;
+    text-align: center;
+    margin-top: 4vh;
+
+}
+footer>div>a{
+    color: #272727;
+}
+footer div:nth-child(2){
+    margin-top: 3vh;
+}
+footer div:nth-child(2)>a{
+    margin: 0 10px;
+}

@@ -1,42 +1,3 @@
-/* Clear all the default settings */
-html,body,p,h1,h2,h3,h4,h5,h6,input,
-form,table{
-    padding: 0;
-    margin: 0;
-}
-
-input,textarea,select{
-    border: 1px solid #666;
-    outline:none;
-}
-ul,li{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-img{
- vertical-align: top;
-}
-b,strong,h1,h2,h3,h4,h5,h6{
-    font-weight: normal;
-}
-em,i{
-    font-style: normal;
-}
-a,u,s,del{
-    text-decoration: none;
-}
-body{
-    line-height: 1;
-    min-width: 768px;
-}
-
-.clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
-}
-
 /* Set background color */
 html,body{
     background-color:  #DEE8E8;
@@ -70,7 +31,7 @@ header section{
     width: 150px;
 }
 #hyperlink{
-    font-family:Trebuchet MS;
+    font-family:"Trebuchet MS";
     font-weight: 800;
     font-size: 30px;
     margin-left: 10%;
@@ -93,7 +54,7 @@ nav li a{
 
 }
 #navi button{
-    font-family:Trebuchet MS;
+    font-family:"Trebuchet MS";
     height: 40px;
     background: #272727;
     display: inline-flex;
@@ -240,7 +201,7 @@ main{
 .swiper svg{
     color: #272727;
     position: absolute;
-    top: 15%;
+    top: 5%;
     left: 40%;
     z-index: 1;
 }
@@ -345,7 +306,7 @@ main{
 }
 .card-back>p{
     height: 100%;
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'Trebuchet MS';
     color: #272727;
     font-style: normal;
@@ -364,7 +325,7 @@ main{
 }
 #section5{
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -372,7 +333,7 @@ main{
     background: #272727;
     color: white;
     padding:0 14vw;
-    font-size:20px;
+    font-size:19px;
     font-family: 'Trebuchet MS';
     line-height: 160%;
 }
