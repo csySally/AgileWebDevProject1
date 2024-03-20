@@ -148,9 +148,9 @@ main{
     flex-direction: column;
     background: #DDF472;
 }
-#section1 video{
-    width: 90%;
-    height: 100%;
+#section1 iframe{
+    width: 80vw;
+    height: 90vh;
     object-fit: cover;
     margin-bottom: 5vh;
 }
