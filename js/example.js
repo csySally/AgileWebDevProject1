@@ -25,24 +25,20 @@ waArea.addEventListener("mouseout", function () {
   wa.style.display = "none";
 });
 
-// 当点击超链接时，JavaScript会截取点击事件并执行一个函数
+/* Ajax function */
 document.getElementById("ajaxLink").addEventListener("click", function (event) {
-  event.preventDefault(); // 阻止超链接的默认跳转行为
-
+  event.preventDefault();
   const ajaxContent = document.getElementById("ajaxContent");
-
-  // 如果内容已经加载，仅切换显示状态
   if (ajaxContent.innerHTML !== "") {
     ajaxContent.style.display =
       ajaxContent.style.display === "none" ? "block" : "none";
-    return; // 提前退出函数
+    return;
   }
-
-  // 执行AJAX请求
+  // ajax
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      // 使用服务器的响应更新网页内容
+      // update the content
       ajaxContent.style.display = "block";
       ajaxContent.innerHTML = this.responseText;
     }
