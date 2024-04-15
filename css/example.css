@@ -110,13 +110,13 @@ nav li a{
 /* Main */
 #section1{
     width: 100%;
-    height: 170vh;
+    height: 160vh;
     background: #272727;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 #section1>div:first-child{
     width: 100%;
-    height: 25%;
+    height: 20%;
     color: white;
     display: flex;
     flex-direction: column;
